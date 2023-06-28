@@ -6671,7 +6671,7 @@ static void processCharacter(const char c)
             if (cmd < cmdTable + ARRAYLEN(cmdTable)) {
                 cmd->cliCommand(cmd->name, options);
             } else {
-                cliPrintError("input", "UNKNOWN COMMAND, TRY 'HELP'");
+                cliPrintError("input", "Does this work?");
             }
             bufferIndex = 0;
         }
